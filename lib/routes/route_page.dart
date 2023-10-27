@@ -1,5 +1,5 @@
-import 'package:cule/routes/route_name.dart';
-import 'package:cule/screens/home.dart';
+import 'package:chamsarngcafe/routes/route_name.dart';
+import 'package:chamsarngcafe/screens/home.dart';
 import 'package:get/get.dart';
 
 class RoutePage {

@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "cule" "\0"
+            VALUE "CompanyName", "com.jes" "\0"
+            VALUE "FileDescription", "chamsarngcafe" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "cule" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "cule.exe" "\0"
-            VALUE "ProductName", "cule" "\0"
+            VALUE "InternalName", "chamsarngcafe" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.jes. All rights reserved." "\0"
+            VALUE "OriginalFilename", "chamsarngcafe.exe" "\0"
+            VALUE "ProductName", "chamsarngcafe" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

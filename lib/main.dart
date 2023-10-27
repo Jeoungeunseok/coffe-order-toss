@@ -1,16 +1,16 @@
-import 'package:cule/routes/route_name.dart';
-import 'package:cule/routes/route_page.dart';
-import 'package:cule/utils/main_color.dart';
+import 'package:chamsarngcafe/routes/route_name.dart';
+import 'package:chamsarngcafe/routes/route_page.dart';
+import 'package:chamsarngcafe/utils/main_color.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ChamsarngCafeApp());
+  runApp(ChamsarngcafeApp());
 }
 
 // ignore: must_be_immutable
-class ChamsarngCafeApp extends StatelessWidget {
-  ChamsarngCafeApp({super.key});
+class ChamsarngcafeApp extends StatelessWidget {
+  ChamsarngcafeApp({super.key});
   final MainColor mainColor = MainColor();
 
   @override

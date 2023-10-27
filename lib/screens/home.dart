@@ -1,5 +1,5 @@
-import 'package:cule/utils/main_color.dart';
-import 'package:cule/widgets/appbar_widget.dart';
+import 'package:chamsarngcafe/utils/main_color.dart';
+import 'package:chamsarngcafe/widgets/appbar_widget.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
