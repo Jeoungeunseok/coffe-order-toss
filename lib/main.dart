@@ -3,6 +3,7 @@ import 'package:chamsarngcafe/routes/route_page.dart';
 import 'package:chamsarngcafe/utils/main_color.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:chamsarngcafe/controllers/menu_controller.dart';
 
 void main() {
   runApp(ChamsarngcafeApp());
@@ -21,6 +22,9 @@ class ChamsarngcafeApp extends StatelessWidget {
           useMaterial3: true,
           colorSchemeSeed: mainColor.mainColor(),
         ),
+        initialBinding: BindingsBuilder(() {
+          Get.put(CafeMenuController());
+        }),
         getPages: RoutePage.page,
         initialRoute: RouteName.home);
   }
