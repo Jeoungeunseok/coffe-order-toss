@@ -4,6 +4,7 @@ import '../models/menu_item.dart';
 class CafeMenuController extends GetxController {
   final RxList<MenuItem> menuItems = <MenuItem>[].obs;
   final RxDouble totalPrice = 0.0.obs;
+  final RxString orderSummary = ''.obs;
 
   @override
   void onInit() {
@@ -32,15 +33,28 @@ class CafeMenuController extends GetxController {
     ]);
   }
 
+  void updateOrderSummary() {
+    List<String> orders = [];
+    for (var item in menuItems) {
+      if (item.quantity.value > 0) {
+        orders.add(
+            '${item.name} x ${item.quantity.value}개 = ${(item.price * item.quantity.value).toInt()}원');
+      }
+    }
+    orderSummary.value = orders.join('\n');
+  }
+
   void incrementQuantity(int index) {
     menuItems[index].quantity.value++;
     calculateTotal();
+    updateOrderSummary();
   }
 
   void decrementQuantity(int index) {
     if (menuItems[index].quantity.value > 0) {
       menuItems[index].quantity.value--;
       calculateTotal();
+      updateOrderSummary();
     }
   }
 
